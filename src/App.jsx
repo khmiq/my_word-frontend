@@ -21,9 +21,9 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-navy flex flex-col items-center p-4">
+    <div className="min-h-screen bg-white flex flex-col items-center p-4">
       <Toaster position="top-center" />
-      <h1 className="text-white text-2xl mb-4">Word Manager</h1>
+      <h1 className="text-navy text-2xl mb-4">Word Manager</h1>
       <WordInput fetchWords={() => {}} />
       <WordList openEditModal={openEditModal} openDeleteModal={openDeleteModal} />
       
