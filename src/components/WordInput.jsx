@@ -13,7 +13,7 @@ const WordInput = ({ fetchWords }) => {
     }
 
     try {
-      const res = await axios.post("https://backend-1teef6xz4-khmiqs-projects.vercel.app/words", { word });
+      const res = await axios.post("https://m-word-backend-git-main-khmiqs-projects.vercel.app/words", { word });
       toast.success("Word added successfully!");
       setWord(""); // Clear input
       fetchWords(); // Refresh word list

@@ -4,7 +4,8 @@ import { toast } from "react-hot-toast";
 const DeleteModal = ({ wordId, closeModal, fetchWords }) => {
   const handleDelete = async () => {
     try {
-      await axios.delete(`https://backend-1teef6xz4-khmiqs-projects.vercel.app/words/${wordId}`);
+      await axios.delete(`https://m-word-backend-git-main-khmiqs-projects.vercel.app
+      /words/${wordId}`);
       toast.success("Word deleted successfully!");
       fetchWords(); // Refresh the word list
       closeModal();

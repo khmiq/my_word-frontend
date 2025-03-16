@@ -14,7 +14,7 @@ const WordList = ({ openEditModal }) => {
   const fetchWords = async () => {
     setLoading(true);
     try {
-      const { data } = await axios.get(`https://backend-1teef6xz4-khmiqs-projects.vercel.app/words?page=${page}&limit=20`);
+      const { data } = await axios.get(`https://m-word-backend-git-main-khmiqs-projects.vercel.app/words?page=${page}&limit=20`);
       setWords((prevWords) => [...prevWords, ...data.words]);
       localStorage.setItem("words", JSON.stringify([...words, ...data.words]));
     } catch (error) {

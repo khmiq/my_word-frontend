@@ -7,7 +7,7 @@ const EditModal = ({ word, closeModal }) => {
 
   const handleUpdate = async () => {
     try {
-      await axios.patch(`https://backend-1teef6xz4-khmiqs-projects.vercel.app/words/${word._id}`, {
+      await axios.patch(`https://m-word-backend-git-main-khmiqs-projects.vercel.app/words/${word._id}`, {
         word: newWord,
       });
       toast.success("Word updated!");
